@@ -1,75 +1,31 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Tryda's Press on's | Luxury Press-On Nails</title>
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Tryda's Press on's</title>
 <style>
-:root{--ink:#241d20;--soft:#f8f3f1;--rose:#c7a5a5;--gold:#b49363;--white:#fff}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Georgia,"Times New Roman",serif;color:var(--ink);background:var(--soft);line-height:1.6}
-nav{position:sticky;top:0;z-index:20;background:#fffefdf2;backdrop-filter:blur(10px);display:flex;justify-content:space-between;align-items:center;padding:17px 6%;border-bottom:1px solid #eadfdb}
-.brand{font-size:1.2rem;letter-spacing:2px;font-weight:bold}.brand span{display:block;font-size:.68rem;letter-spacing:3px;font-weight:normal;color:#806d6d}
-nav a{color:var(--ink);text-decoration:none;margin-left:18px;font-size:.9rem}
-.hero{min-height:78vh;display:grid;place-items:center;text-align:center;padding:70px 20px;background:radial-gradient(circle at 50% 35%,#fff,#f7eeec 48%,#eadbd8)}
-.hero-inner{max-width:850px}.eyebrow{text-transform:uppercase;letter-spacing:4px;color:#806d6d;font-size:.72rem}
-h1{font-size:clamp(3rem,8vw,6.5rem);line-height:.95;margin:18px 0;font-weight:500}
-.hero p{font-size:1.1rem;max-width:650px;margin:25px auto 32px}
-.btn{display:inline-block;background:#2b2325;color:#fff;padding:13px 25px;border-radius:40px;text-decoration:none;margin:5px;border:0;cursor:pointer}.btn.alt{background:transparent;color:#2b2325;border:1px solid #8f7775}
-section{padding:75px 6%;max-width:1200px;margin:auto}.section-title{text-align:center;margin-bottom:40px}.section-title h2{font-size:2.35rem;font-weight:500;margin:8px 0}.section-title p{color:#75686a}
-.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.card{background:#fff;padding:30px 24px;text-align:center;border:1px solid #eadfdb}.icon{font-size:2rem}.card h3{font-weight:500}
-.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.product{background:#fff;border:1px solid #eadfdb;overflow:hidden}.product img{width:100%;height:290px;object-fit:cover;display:block}.product .ph{height:290px;display:grid;place-items:center;background:linear-gradient(145deg,#f1dfdc,#c9aaa6);font-size:3rem;color:#fff}.product-body{padding:18px}.product-body h3{margin:0;font-weight:500}.price{color:#806d6d}.order{background:#2b2325;color:#fff;max-width:none;text-align:center;padding:80px 6%}.order p{max-width:650px;margin:15px auto 28px;color:#e8dddd}.order .btn{background:#fff;color:#2b2325}
-.admin{display:none;background:#fff;border-top:1px solid #ddd;padding:35px 6%}.admin.show{display:block}.admin h2{margin-top:0;font-weight:500}.form{display:grid;grid-template-columns:1fr 1fr;gap:12px;max-width:900px}.form input,.form textarea{padding:12px;border:1px solid #d9cecb;font:inherit}.form textarea{grid-column:1/-1;min-height:90px}.admin small{color:#75686a}.manage{margin-top:25px}.manage-row{display:flex;justify-content:space-between;gap:10px;padding:10px 0;border-bottom:1px solid #eee;align-items:center}.danger{background:#8a3e3e}.admin-note{background:#f8f3f1;padding:12px;margin:15px 0;max-width:900px}
-footer{text-align:center;padding:32px 20px;background:#211b1d;color:#ddd;font-size:.9rem}footer b{color:#fff}
-@media(max-width:750px){nav .links{display:none}.cards,.gallery,.form{grid-template-columns:1fr}.hero{min-height:70vh}.form textarea{grid-column:auto}}
-</style>
-</head>
+:root{--ink:#241d20;--bg:#f8f3f1;--rose:#c8aaa7}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:Georgia,serif}nav{padding:18px 7%;background:#fff;border-bottom:1px solid #eadfdb;display:flex;justify-content:space-between}.brand{font-weight:bold;letter-spacing:2px}.brand small{display:block;font-weight:normal;font-size:10px;letter-spacing:3px}.hero{text-align:center;padding:100px 20px;background:radial-gradient(circle,#fff,#eadbd8)}h1{font-size:clamp(3rem,8vw,6rem);font-weight:500;line-height:.95}.btn{display:inline-block;border:0;border-radius:30px;padding:13px 25px;background:#2b2325;color:#fff;text-decoration:none;cursor:pointer;margin:5px}.gallery{max-width:1100px;margin:auto;padding:70px 6%;display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{background:#fff;border:1px solid #eadfdb}.card img,.placeholder{width:100%;height:260px;object-fit:cover}.placeholder{display:grid;place-items:center;background:linear-gradient(145deg,#f1dfdc,#c9aaa6);font-size:3rem}.body{padding:18px}.price{color:#806d6d}.admin{display:none;max-width:1100px;margin:auto;padding:60px 6%}.admin.show{display:block}.form{display:grid;grid-template-columns:1fr 1fr;gap:12px}.form input,.form textarea{padding:12px;border:1px solid #d8ceca;font:inherit}.form textarea{grid-column:1/-1}.rows{margin-top:25px}.row{background:#fff;padding:12px;margin:7px 0;display:flex;justify-content:space-between}.login{position:fixed;inset:0;background:#f8f3f1eF;display:none;place-items:center;z-index:50}.login.show{display:grid}.loginbox{background:#fff;padding:35px;width:min(400px,90%);box-shadow:0 10px 40px #0002}.loginbox input{width:100%;padding:13px;margin:7px 0;border:1px solid #ddd}.error{color:#9a3434;min-height:20px}@media(max-width:700px){.gallery,.form{grid-template-columns:1fr}.form textarea{grid-column:auto}}
+</style></head>
 <body>
-<nav><div class="brand">TRYDA'S <span>PRESS ON'S</span></div><div class="links"><a href="#designs">Designs</a><a href="#about">About</a><a href="#order">Order</a><a href="#admin" onclick="openAdmin()">Manage</a></div></nav>
-
-<header class="hero"><div class="hero-inner"><div class="eyebrow">Luxury • Custom • Reusable</div><h1>Beautiful nails,<br>made for you.</h1><p>Custom-made press-on nails designed to match your style. Any design. Any length. Reusable and made with love.</p><a class="btn" href="https://wa.me/27631524112?text=Hi%20Tryda%27s%20Press%20on%27s%2C%20I%27d%20like%20to%20place%20an%20order." target="_blank">Order on WhatsApp</a><a class="btn alt" href="#designs">View Designs</a></div></header>
-
-<section id="about"><div class="section-title"><div class="eyebrow">The Tryda's touch</div><h2>Made to feel luxurious</h2><p>Your nails should be as unique as you are.</p></div><div class="cards">
-<div class="card"><div class="icon">✦</div><h3>Custom Made</h3><p>Choose your design, colours and length for a set made especially for you.</p></div>
-<div class="card"><div class="icon">♡</div><h3>Reusable</h3><p>Enjoy your beautiful press-ons again and again when cared for properly.</p></div>
-<div class="card"><div class="icon">✧</div><h3>Any Style</h3><p>From timeless elegance to bold statement nails — bring your ideas and we'll create them.</p></div>
-</div></section>
-
-<section id="designs"><div class="section-title"><div class="eyebrow">Your collection</div><h2>Latest designs</h2><p>Add your own nail photos, names and prices using the Manage button.</p></div><div class="gallery" id="gallery"></div></section>
-
-<section><div class="section-title"><div class="eyebrow">Delivery & pickup</div><h2>From our hands to yours</h2><p>Fast and reliable PUDO locker delivery is available, and pickup is also available.</p></div></section>
-
-<div class="order" id="order"><div class="eyebrow" style="color:#cdb6a8">Ready for your next set?</div><h2 style="font-size:2.7rem;font-weight:500;margin:10px 0">Let's create your perfect nails.</h2><p>Send us a WhatsApp message with your preferred design, length and inspiration pictures.</p><a class="btn" href="https://wa.me/27631524112?text=Hi%20Tryda%27s%20Press%20on%27s%2C%20I%27d%20like%20to%20order%20custom%20press-on%20nails." target="_blank">WhatsApp 063 152 4112</a></div>
-
-<section id="admin" class="admin"><h2>Manage your website</h2><div class="admin-note">You can add your own work below. Photos are saved in this browser. For a public website where you can manage products from any phone, a small online database/admin system would be added when the site is hosted.</div>
-<div class="form"><input id="name" placeholder="Nail set name"><input id="price" placeholder="Price e.g. R250"><input id="image" type="file" accept="image/*"><textarea id="desc" placeholder="Short description"></textarea><button class="btn" onclick="addProduct()">Add nail set</button></div>
-<div class="manage" id="manage"></div>
-<button class="btn alt" onclick="closeAdmin()">Close manager</button></section>
-
-<footer><b>TRYDA'S PRESS ON'S</b><br>Custom • Reusable • Made for you<br><br>© 2026 Tryda's Press on's</footer>
-
+<nav><div class="brand">TRYDA'S <small>PRESS ON'S</small></div><button class="btn" onclick="showLogin()">Owner Login</button></nav>
+<header class="hero"><div><p>✦ LUXURY • CUSTOM • REUSABLE ✦</p><h1>Beautiful nails,<br>made for you.</h1><p>Custom press-on nails in any design and length.</p><a class="btn" href="#designs">View Designs</a><a class="btn" href="https://wa.me/27631524112" target="_blank">WhatsApp to Order</a></div></header>
+<section id="designs"><div class="gallery" id="gallery"></div></section>
+<section id="admin" class="admin"><h2>Private Owner Dashboard</h2><p>Add and manage your nail sets. This dashboard is only available after login.</p>
+<div class="form"><input id="name" placeholder="Nail set name"><input id="price" placeholder="Price e.g. R250"><input id="photo" type="file" accept="image/*"><textarea id="desc" placeholder="Description"></textarea><button class="btn" onclick="add()">Add nail set</button></div><div class="rows" id="rows"></div><button class="btn" onclick="logout()">Log out</button></section>
+<div class="login" id="login"><div class="loginbox"><h2>Owner Login</h2><p>Private management area</p><input id="user" placeholder="Username" autocomplete="username"><input id="pass" type="password" placeholder="Password" autocomplete="current-password"><div class="error" id="err"></div><button class="btn" onclick="login()">Log in</button><button class="btn" style="background:transparent;color:#241d20;border:1px solid #aaa" onclick="hideLogin()">Cancel</button></div></div>
 <script>
-const defaultProducts=[
+/* DEMO LOGIN FOR THE DOWNLOADED STATIC VERSION.
+   For a truly secure online login, connect this site to a server/authentication provider before publishing. */
+const OWNER_USER="tryda", OWNER_PASS="ChangeMe123!";
+let products=JSON.parse(localStorage.getItem("trydaProducts")||"null")||[
 {name:"Soft Blush",price:"",desc:"Elegant soft blush set.",image:""},
 {name:"Champagne Glow",price:"",desc:"A glamorous champagne-inspired set.",image:""},
-{name:"Mocha Luxe",price:"",desc:"Rich neutral tones with a luxury finish.",image:""}
-];
-let products=JSON.parse(localStorage.getItem("trydaProducts")||"null")||defaultProducts;
-function save(){localStorage.setItem("trydaProducts",JSON.stringify(products));render();}
-function render(){
- const g=document.getElementById("gallery"),m=document.getElementById("manage");
- g.innerHTML=products.map((p,i)=>`<article class="product">${p.image?`<img src="${p.image}" alt="${esc(p.name)}">`:`<div class="ph">✦</div>`}<div class="product-body"><h3>${esc(p.name)}</h3><div class="price">${esc(p.price||"Custom price")}</div><p>${esc(p.desc||"Custom-made press-on nails.")}</p><a class="btn" href="https://wa.me/27631524112?text=${encodeURIComponent("Hi Tryda's Press on's, I am interested in the "+p.name+" set.")}" target="_blank">Ask about this set</a></div></article>`).join("");
- m.innerHTML=products.map((p,i)=>`<div class="manage-row"><span><b>${esc(p.name)}</b> ${p.price? "— "+esc(p.price):""}</span><button class="btn danger" onclick="removeProduct(${i})">Remove</button></div>`).join("");
-}
-function addProduct(){
- const n=document.getElementById("name").value.trim(),pr=document.getElementById("price").value.trim(),d=document.getElementById("desc").value.trim(),f=document.getElementById("image").files[0];
- if(!n){alert("Please add a nail set name.");return}
- const done=image=>{products.unshift({name:n,price:pr,desc:d,image:image||""});save();document.getElementById("name").value="";document.getElementById("price").value="";document.getElementById("desc").value="";document.getElementById("image").value="";};
- if(f){const r=new FileReader();r.onload=()=>done(r.result);r.readAsDataURL(f)}else done("");
-}
-function removeProduct(i){if(confirm("Remove this nail set?")){products.splice(i,1);save()}}
-function openAdmin(){document.getElementById("admin").classList.add("show")}
-function closeAdmin(){document.getElementById("admin").classList.remove("show")}
+{name:"Mocha Luxe",price:"",desc:"Rich neutral tones with a luxury finish.",image:""}];
+function save(){localStorage.setItem("trydaProducts",JSON.stringify(products));render()}
+function render(){gallery.innerHTML=products.map(p=>`<article class="card">${p.image?`<img src="${p.image}" alt="">`:`<div class="placeholder">✦</div>`}<div class="body"><h3>${esc(p.name)}</h3><div class="price">${esc(p.price||"Ask for price")}</div><p>${esc(p.desc||"Custom-made press-on nails.")}</p><a class="btn" href="https://wa.me/27631524112?text=${encodeURIComponent("Hi Tryda's Press on's, I'm interested in "+p.name)}" target="_blank">Ask on WhatsApp</a></div></article>`).join("");rows.innerHTML=products.map((p,i)=>`<div class="row"><span><b>${esc(p.name)}</b> ${esc(p.price)}</span><button class="btn" onclick="removeP(${i})">Delete</button></div>`).join("")}
+function showLogin(){loginBox(true)}function hideLogin(){loginBox(false)}function loginBox(x){document.getElementById("login").classList.toggle("show",x)}
+function login(){if(user.value===OWNER_USER&&pass.value===OWNER_PASS){sessionStorage.setItem("trydaOwner","1");loginBox(false);admin.classList.add("show");location.hash="admin"}else err.textContent="Incorrect username or password."}
+function logout(){sessionStorage.removeItem("trydaOwner");admin.classList.remove("show");location.hash=""}
+function add(){let n=name.value.trim(),pr=price.value.trim(),d=desc.value.trim(),f=photo.files[0];if(!n)return alert("Add a nail set name.");let done=img=>{products.unshift({name:n,price:pr,desc:d,image:img||""});save();name.value=price.value=desc.value="";photo.value=""};if(f){let r=new FileReader();r.onload=()=>done(r.result);r.readAsDataURL(f)}else done("")}
+function removeP(i){if(confirm("Delete this set?")){products.splice(i,1);save()}}
 function esc(s){return String(s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#039;"}[c]))}
-render();
-</script>
-</body></html>
+if(sessionStorage.getItem("trydaOwner")==="1")admin.classList.add("show");render();
+</script></body></html>
